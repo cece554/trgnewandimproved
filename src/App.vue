@@ -1,32 +1,25 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+  <div>
+    <header class="main-header">
+      <h1>
+        <img class="logo" src="@/assets/img/trg-logo.svg" alt="" />
+      </h1>
+      <nav>
+        <ul class="nav-list">
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="http://">Follow me</a>
+          </li>
+          <li>
+            <a href="#contact">Contct</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <router-view />
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
-</style>
+<style></style>
