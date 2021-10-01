@@ -28,11 +28,7 @@
       <section class="drawer__media">
         <div class="drawer__media-container" data-current="0">
           <figure class="work-img">
-            <img
-              :src="require(`@/assets/img/Clients${item.img}`)"
-              alt=""
-              srcset=""
-            />
+            <img src="require(`@/assets/img/Clients/$`)" alt="" srcset="" />
             <span></span>
           </figure>
         </div>
@@ -101,10 +97,7 @@ export default {
         {
           client: "Xtina Starr",
           scope: ["Flyer Design", "Logo Design"],
-          details: [
-            "for a guide and recipes on how to configure customize this project check out the vuecli do,cumentation ",
-          ],
-          projects: [
+          work: [
             {
               image: "AfroHouse-Memorial-Day-Party-Flyer.png",
               details:
@@ -125,10 +118,7 @@ export default {
         {
           client: "Good Green",
           scope: ["Branding"],
-          details: [
-            "for a guide and recipes on how to configure customize this project check out the vuecli do,cumentation ",
-          ],
-          projects: [
+          work: [
             {
               image: "AfroHouse-Memorial-Day-Party-Flyer.png",
               details:

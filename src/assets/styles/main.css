@@ -1,6 +1,14 @@
+@font-face {
+  font-family: 'Favorit Pro';
+  src: url(../fonts/FavoritPro-Regular.woff2);
+  font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 body{
   background-color: #F5F5F5;
-  font-family: Favorit;
+  font-family: 'Favorit Pro';
   line-height: 1.5;
   color: #2A2B2C;
   font-size: 16px;
