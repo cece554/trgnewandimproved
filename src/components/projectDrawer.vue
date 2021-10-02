@@ -24,12 +24,15 @@
         </svg>
       </span>
     </header>
-    <main class="drawer__content">
+    <main class="drawer__content" v-for="project in projects" :key="project.id">
       <section class="drawer__media">
         <div class="drawer__media-container" data-current="0">
           <figure class="work-img">
-            <img src="require(`@/assets/img/Clients/$`)" alt="" srcset="" />
-            <span></span>
+            <img
+              src="require(`@/assets/img/Clients/${project.image}`)"
+              alt=""
+              srcset=""
+            />
           </figure>
         </div>
       </section>
@@ -66,19 +69,17 @@
         </button>
       </div>
       <section class="drawer__project-details">
-        <h3>Xtina Starr</h3>
+        <h3>{{ project.client }}</h3>
         <p>
-          What you are hearing right now is a work realized with the support of
-          OGR - Officine Grandi Riparazioni, in collaboration with CRIPTA747,
-          curated by Elisa Troiano, Alexandro Tripodi, Renato Leotta, Marianna
-          Orlotti (Turin).
+          {{ project.work }}
         </p>
         <div class="project-scope">
           <h5 class="scope-title">scope</h5>
           <small class="scope-details">
             <ul>
-              <li>Flyer Design</li>
-              <li>Logo Design</li>
+              <li v-for="scope in projects.scope" :key="scope">
+                {{ index }}
+              </li>
             </ul>
           </small>
         </div>
@@ -89,50 +90,50 @@
 
 <script>
 export default {
-  name: "projectDrawer",
+  name: 'projectDrawer',
 
   data: function () {
     return {
       projects: [
         {
-          client: "Xtina Starr",
-          scope: ["Flyer Design", "Logo Design"],
+          client: 'Xtina Starr',
+          scope: ['Flyer Design', 'Logo Design'],
           work: [
             {
-              image: "AfroHouse-Memorial-Day-Party-Flyer.png",
+              image: '/Xtina-Starr/AfroHouse-Memorial-Day-Party-Flyer.png',
               details:
-                "for a guide and recipes on how to configure customize this project check out the vuecli do,cumentation",
+                'for a guide and recipes on how to configure customize this project check out the vuecli do,cumentation',
             },
             {
-              image: "studio-imphepo-flyer-Aug1-Approved.jpg",
+              image: 'studio-imphepo-flyer-Aug1-Approved.jpg',
               details:
-                "for a guide and recipes on how to configure customize this project check out the vuecli do,cumentation",
+                'for a guide and recipes on how to configure customize this project check out the vuecli do,cumentation',
             },
             {
-              image: "",
+              image: '',
               details:
-                "for a guide and recipes on how to configure customize this project check out the vuecli do,cumentation",
+                'for a guide and recipes on how to configure customize this project check out the vuecli do,cumentation',
             },
           ],
         },
         {
-          client: "Good Green",
-          scope: ["Branding"],
+          client: 'Good Green',
+          scope: ['Branding'],
           work: [
             {
-              image: "AfroHouse-Memorial-Day-Party-Flyer.png",
+              image: 'AfroHouse-Memorial-Day-Party-Flyer.png',
               details:
-                "for a guide and recipes on how to configure customize this project check out the vuecli do,cumentation",
+                'for a guide and recipes on how to configure customize this project check out the vuecli do,cumentation',
             },
             {
-              image: "studio-imphepo-flyer-Aug1-Approved.jpg",
+              image: 'studio-imphepo-flyer-Aug1-Approved.jpg',
               details:
-                "for a guide and recipes on how to configure customize this project check out the vuecli do,cumentation",
+                'for a guide and recipes on how to configure customize this project check out the vuecli do,cumentation',
             },
             {
-              image: "",
+              image: '',
               details:
-                "for a guide and recipes on how to configure customize this project check out the vuecli do,cumentation",
+                'for a guide and recipes on how to configure customize this project check out the vuecli do,cumentation',
             },
           ],
         },
