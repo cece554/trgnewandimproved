@@ -31,5 +31,10 @@ export default {
       drawerVisible: true,
     };
   },
+  methods: {
+    toggleDrawer() {
+      this.drawerVisible = !this.drawerVisible;
+    },
+  },
 };
 </script>
