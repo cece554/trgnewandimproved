@@ -43,12 +43,13 @@ body{
   list-style: decimal;
   content: "    ";
   margin-right: 10px;
-  transition: all 0.5s;
+  transition: content 0.5s;
+  
 }
 
 .nav-list li:hover::marker {
   content: "↗ ";
-  transition: all 0.5s;
+
 }
 nav a{
   text-transform: capitalize;
@@ -57,9 +58,13 @@ nav a{
   font-weight: normal;
   transition: all 0.5s;
 }
-.nav-list li:not(:last-child){
-  padding-right: 18px;
+.nav-list li{
+  padding-left: 8px;
 }
+.nav-list li:not(:last-child){
+  padding-right: 8px;
+}
+
 
 nav a.button{
   color:white;
