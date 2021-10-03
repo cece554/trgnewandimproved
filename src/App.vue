@@ -13,7 +13,7 @@
             <a href="http://">Follow me</a>
           </li>
           <li>
-            <a href="#contact">Contct</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </nav>

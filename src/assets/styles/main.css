@@ -19,9 +19,16 @@ body{
   padding: 3em 5em 2.5em 5em;
   align-items: center;
 }
-.logo{
-  margin-right: 60px;
+
+.main-header .logo{
+  margin-right: 4em;
+  transition: transform 3s;
 }
+
+.main-header .logo:hover {
+  transform: rotate(360deg);
+}
+
 .nav-list {
   display: flex;
   flex-direction: row;
@@ -34,12 +41,13 @@ body{
 }
 .nav-list li::marker{
   list-style: decimal;
-  content: " ";
+  content: "    ";
+  margin-right: 10px;
   transition: all 0.5s;
 }
 
 .nav-list li:hover::marker {
-  content: "↗";
+  content: "↗ ";
   transition: all 0.5s;
 }
 nav a{
