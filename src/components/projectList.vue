@@ -2,10 +2,12 @@
   <div>
     <div class="projects">
       <h4>Selected Works</h4>
-      <button class="toggle"><i class="las la-bars"></i> Show Menu</button>
+      <button class="toggle" @click="toggleDrawer()">
+        <i class="las la-bars"></i> Show Menu
+      </button>
       <ul class="project-list">
         <li class="project-item">
-          <a class="pj" @click="drawerVisible = true">
+          <a class="pj">
             <p class="client">Xtina Starr</p>
             <span class="pj-link"
               ><p class="view-pj">view projects</p>

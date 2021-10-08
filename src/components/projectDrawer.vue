@@ -24,12 +24,12 @@
         </svg>
       </span>
     </header>
-    <main class="drawer__content" v-for="project in projects" :key="project.id">
+    <main class="drawer__content" v-for="(work, index) in works" :key="index">
       <section class="drawer__media">
         <div class="drawer__media-container" data-current="0">
           <figure class="work-img">
             <img
-              src="require(`@/assets/img/Clients/${project.image}`)"
+              src="require(`@/assets/img/Clients/${image.works}`)"
               alt=""
               srcset=""
             />
@@ -69,16 +69,16 @@
         </button>
       </div>
       <section class="drawer__project-details">
-        <h3>{{ project.client }}</h3>
+        <h3>{{ works.client }}</h3>
         <p>
-          {{ project.work }}
+          {{ works.details }}
         </p>
         <div class="project-scope">
           <h5 class="scope-title">scope</h5>
           <small class="scope-details">
             <ul>
-              <li v-for="scope in projects.scope" :key="scope">
-                {{ index }}
+              <li>
+                {{ works.scope }}
               </li>
             </ul>
           </small>
@@ -89,56 +89,12 @@
 </template>
 
 <script>
+import works from '../data/works.js';
 export default {
   name: 'projectDrawer',
-
-  data: function () {
-    return {
-      projects: [
-        {
-          client: 'Xtina Starr',
-          scope: ['Flyer Design', 'Logo Design'],
-          work: [
-            {
-              image: '/Xtina-Starr/AfroHouse-Memorial-Day-Party-Flyer.png',
-              details:
-                'for a guide and recipes on how to configure customize this project check out the vuecli do,cumentation',
-            },
-            {
-              image: 'studio-imphepo-flyer-Aug1-Approved.jpg',
-              details:
-                'for a guide and recipes on how to configure customize this project check out the vuecli do,cumentation',
-            },
-            {
-              image: '',
-              details:
-                'for a guide and recipes on how to configure customize this project check out the vuecli do,cumentation',
-            },
-          ],
-        },
-        {
-          client: 'Good Green',
-          scope: ['Branding'],
-          work: [
-            {
-              image: 'AfroHouse-Memorial-Day-Party-Flyer.png',
-              details:
-                'for a guide and recipes on how to configure customize this project check out the vuecli do,cumentation',
-            },
-            {
-              image: 'studio-imphepo-flyer-Aug1-Approved.jpg',
-              details:
-                'for a guide and recipes on how to configure customize this project check out the vuecli do,cumentation',
-            },
-            {
-              image: '',
-              details:
-                'for a guide and recipes on how to configure customize this project check out the vuecli do,cumentation',
-            },
-          ],
-        },
-      ],
-    };
+  data: works,
+  props: {
+    works: Object,
   },
 };
 </script>
