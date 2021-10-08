@@ -4,11 +4,7 @@
       <hero msg="Welcome to Your Vue.js App" />
       <projectList />
     </main>
-    <projectDrawer
-      :style="{
-        transform: drawerVisible ? 'none' : 'translate3d(100%, 0, 0)',
-      }"
-    />
+    <projectDrawer />
   </div>
 </template>
 
