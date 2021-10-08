@@ -2,8 +2,8 @@ const works = [
   {
     client: 'Xtina Starr',
     images: [
-      '/Xtina-Starr/AfroHouse-Memorial-Day-Party-Flyer.png',
-      '/Xtina-starr/AfroHouse-Memorial-Day-Party-Flyer',
+      'Xtina/AfroHouse-Memorial-Day-Party-Flyer.png',
+      'Xtina/AfroHouse-Memorial-Day-Party-Flyer.png',
     ],
     scope: ['Flyer Design', 'Logo Design'],
     details:
@@ -12,8 +12,8 @@ const works = [
   {
     client: 'Good Green',
     images: [
-      '/good-green/AfroHouse-Memorial-Day-Party-Flyer.png',
-      '/good-green/AfroHouse-Memorial-Day-Party-Flyer',
+      'Xtina/AfroHouse-Memorial-Day-Party-Flyer.png',
+      'Xtina/AfroHouse-Memorial-Day-Party-Flyer.png',
     ],
     scope: ['Flyer Design', 'Logo Design'],
     details:

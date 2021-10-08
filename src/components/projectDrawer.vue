@@ -24,12 +24,35 @@
         </svg>
       </span>
     </header>
-    <main class="drawer__content" v-for="(work, index) in works" :key="index">
+    <main class="drawer__content" v-for="work in works" :key="work.client">
       <section class="drawer__media">
+        <splide>
+          <splide-slide>
+            <img
+              src="@/assets/img/Clients/Xtina/AfroHouse-Memorial-Day-Party-Flyer.png"
+            />
+          </splide-slide>
+          <splide-slide>
+            <img
+              src="@/assets/img/Clients/Xtina/studio-imphepo-flyer-Sept-goodwill-Approved.png"
+            />
+          </splide-slide>
+          <splide-slide>
+            <img
+              src="@/assets/img/Clients/Xtina/AfroHouse-Memorial-Day-Party-Flyer.png"
+            />
+          </splide-slide>
+          <splide-slide>
+            <img
+              src="@/assets/img/Clients/Xtina/studio-imphepo-flyer-Sept-goodwill-Approved.png"
+            />
+          </splide-slide>
+        </splide>
+
         <div class="drawer__media-container" data-current="0">
           <figure class="work-img">
             <img
-              src="require(`@/assets/img/Clients/${image.works}`)"
+              src="require(`@/assets/img/Clients/${work.images}`)"
               alt=""
               srcset=""
             />
@@ -69,17 +92,13 @@
         </button>
       </div>
       <section class="drawer__project-details">
-        <h3>{{ works.client }}</h3>
-        <p>
-          {{ works.details }}
-        </p>
+        <h3>{{ work.client }}</h3>
+        <p>{{ work.details }}</p>
         <div class="project-scope">
           <h5 class="scope-title">scope</h5>
           <small class="scope-details">
             <ul>
-              <li>
-                {{ works.scope }}
-              </li>
+              <li>{{ work.scope }}</li>
             </ul>
           </small>
         </div>
@@ -90,11 +109,18 @@
 
 <script>
 import works from '../data/works.js';
+import { Splide, SplideSlide } from '@splidejs/vue-splide';
+import '@splidejs/splide/dist/css/themes/splide-default.min.css';
 export default {
   name: 'projectDrawer',
-  data: works,
-  props: {
-    works: Object,
+  components: {
+    Splide,
+    SplideSlide,
+  },
+  data() {
+    return {
+      works,
+    };
   },
 };
 </script>
