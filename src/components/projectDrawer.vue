@@ -1,8 +1,7 @@
 <template>
   <aside
     class="drawer"
-    v-bind:class="{ closed: isClosed}"
-    v-bind:isClosed="isClosed"
+    v-bind:class="{ closed: isClosed, opened: !isClosed }"
   >
     <span class="drawer__overlay closer"></span>
     <header
@@ -120,14 +119,18 @@ export default {
     Splide,
     SplideSlide,
   },
+  props: {
+    isOpen: Boolean
+  },
   data() {
     return {
       works,
-      isClosed: false,
+      isClosed: true,
     };
   },
   methods: {
     closeDrawer() {
+      this.$el.classList.remove('opened')
       this.isClosed = true
     }
   },
