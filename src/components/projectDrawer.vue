@@ -1,13 +1,15 @@
 <template>
-  <aside class="drawer drawer--projects">
+  <aside
+    class="drawer"
+    v-bind:class="{ closed: isClosed, opened: !isClosed }"
+  >
     <span class="drawer__overlay closer"></span>
-    <header class="drawer__header">
+    <header
+      class="drawer__header"
+    >
       <span
         class="drawer__close closer"
-        :style="{
-          transform: drawerVisible ? 'translate3d(100%, 0, 0)' : 'none',
-        }"
-        @click="drawerVisible = false"
+        @click="closeDrawer"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -117,10 +119,20 @@ export default {
     Splide,
     SplideSlide,
   },
+  props: {
+    isOpen: Boolean
+  },
   data() {
     return {
       works,
+      isClosed: true,
     };
+  },
+  methods: {
+    closeDrawer() {
+      this.$el.classList.remove('opened')
+      this.isClosed = true
+    }
   },
 };
 </script>
