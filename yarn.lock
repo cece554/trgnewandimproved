@@ -979,10 +979,10 @@
   dependencies:
     "@vimeo/player" "^2.10.0"
 
-"@splidejs/splide-extension-video@^0.5.0":
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/@splidejs/splide-extension-video/-/splide-extension-video-0.5.0.tgz#f6cfd88dc15076fa139054b3b0ad42b5415cdecf"
-  integrity sha512-4yz/r8p7aaDygMJrrlOokS7xKJ0tzZh0Wa7oT734FgMgv8lHLKqf5RTEWDfCXIFUmyRADDFEzu5OZMMv092H6A==
+"@splidejs/splide-extension-video@^0.5.2":
+  version "0.5.7"
+  resolved "https://registry.yarnpkg.com/@splidejs/splide-extension-video/-/splide-extension-video-0.5.7.tgz#19a10887f17eb009e240983c863eed399f5ddc98"
+  integrity sha512-oMdxUHa1XEdwoeO9okSiqiiZchL1AKVeEqtEkS19tnJAcniN8uNkUsqt7uwhmFgL6kBpPHMIoYpmJ/ASEXryNQ==
   dependencies:
     "@vimeo/player" "^2.16.0"
 
