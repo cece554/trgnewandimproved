@@ -991,10 +991,10 @@
   resolved "https://registry.yarnpkg.com/@splidejs/splide/-/splide-2.4.21.tgz#ad1954d8d8822c9bfea0d3dc6a119358b88581ad"
   integrity sha512-LdIwSnmNsGybCCnA3QG2dOeRv/rQl46jf7FflXxMGX0ADYWyL6UJHWJbMZvHBi5I67uRJY1ga/W+CvJ39nH26A==
 
-"@splidejs/splide@^3.0.3":
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/@splidejs/splide/-/splide-3.0.3.tgz#915b3ae0d1af2a0980e423ed9cf70252bf724bf0"
-  integrity sha512-ny9zrCSF7MpzdCyyWlHXUkTlz2Mevg+fZ1MqbUw9urwzIHvYwhlxrP5PDL7nbNdWM5ouCdKzDgufhcJyx1gaOA==
+"@splidejs/splide@^3.1.6":
+  version "3.2.6"
+  resolved "https://registry.yarnpkg.com/@splidejs/splide/-/splide-3.2.6.tgz#5870ee812d981b86af82fa2f4ca822d73d3c1a8f"
+  integrity sha512-3Av1AqUJZAzkXxJg6fpynpwoKYktT2R09jBmKUp384tNqNtpAYx0gzIg+pjnH3QZvVsysW9blukEAQj++wgkWg==
 
 "@splidejs/vue-splide@^0.3.5":
   version "0.3.5"
