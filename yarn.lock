@@ -972,13 +972,6 @@
   resolved "https://registry.yarnpkg.com/@soda/get-current-script/-/get-current-script-1.0.2.tgz#a53515db25d8038374381b73af20bb4f2e508d87"
   integrity sha512-T7VNNlYVM1SgQ+VsMYhnDkcGmWhQdL0bDyGm5TlQ3GBXnJscEClUUOKduWTmm2zCnvNLC1hc3JpuXjs/nFOc5w==
 
-"@splidejs/splide-extension-video@^0.4.6":
-  version "0.4.6"
-  resolved "https://registry.yarnpkg.com/@splidejs/splide-extension-video/-/splide-extension-video-0.4.6.tgz#fe832e0a2f87a56896e800aead73e6ef78f2cb96"
-  integrity sha512-UEqxkuYClYDhV+DsX9384wKj6FWwWN3HUvUXcNPVKZiHvh0Zn0t1M2w/hcDRJ3VtCxFhx92Kgzlkf22HqdyF+g==
-  dependencies:
-    "@vimeo/player" "^2.10.0"
-
 "@splidejs/splide-extension-video@^0.5.0":
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/@splidejs/splide-extension-video/-/splide-extension-video-0.5.0.tgz#f6cfd88dc15076fa139054b3b0ad42b5415cdecf"
@@ -986,24 +979,22 @@
   dependencies:
     "@vimeo/player" "^2.16.0"
 
-"@splidejs/splide@^2.4.13":
-  version "2.4.21"
-  resolved "https://registry.yarnpkg.com/@splidejs/splide/-/splide-2.4.21.tgz#ad1954d8d8822c9bfea0d3dc6a119358b88581ad"
-  integrity sha512-LdIwSnmNsGybCCnA3QG2dOeRv/rQl46jf7FflXxMGX0ADYWyL6UJHWJbMZvHBi5I67uRJY1ga/W+CvJ39nH26A==
-
 "@splidejs/splide@^3.0.3":
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/@splidejs/splide/-/splide-3.0.3.tgz#915b3ae0d1af2a0980e423ed9cf70252bf724bf0"
   integrity sha512-ny9zrCSF7MpzdCyyWlHXUkTlz2Mevg+fZ1MqbUw9urwzIHvYwhlxrP5PDL7nbNdWM5ouCdKzDgufhcJyx1gaOA==
 
-"@splidejs/vue-splide@^0.3.5":
-  version "0.3.5"
-  resolved "https://registry.yarnpkg.com/@splidejs/vue-splide/-/vue-splide-0.3.5.tgz#375d3c615fd88c612f46b8029b4ad2007ad6991b"
-  integrity sha512-eI4Kl2v+yAGKMVa9MtfIIPPZtplTfKPx4rCJlZqfethl3tCOGQwL9MxSyLk6bUhl31aOuClxmXQv8O5ubU8fNQ==
+"@splidejs/splide@^3.2.2":
+  version "3.2.6"
+  resolved "https://registry.yarnpkg.com/@splidejs/splide/-/splide-3.2.6.tgz#5870ee812d981b86af82fa2f4ca822d73d3c1a8f"
+  integrity sha512-3Av1AqUJZAzkXxJg6fpynpwoKYktT2R09jBmKUp384tNqNtpAYx0gzIg+pjnH3QZvVsysW9blukEAQj++wgkWg==
+
+"@splidejs/vue-splide@^0.5.0":
+  version "0.5.5"
+  resolved "https://registry.yarnpkg.com/@splidejs/vue-splide/-/vue-splide-0.5.5.tgz#0e3ad59e55de10da3a41f5987d296df4a5c9c689"
+  integrity sha512-bCSB17rJeAG4t55pnFrA6N6XYlR9nDcUYUaQqy6ssAq0S7aB2VkhEPwcS4ncituGMtfzV2BYPTpH3X29ATCnNg==
   dependencies:
-    "@splidejs/splide" "^2.4.13"
-    "@splidejs/splide-extension-video" "^0.4.6"
-    vue "^2.6.12"
+    "@splidejs/splide" "^3.2.2"
 
 "@types/body-parser@*":
   version "1.19.1"
@@ -1164,7 +1155,7 @@
     anymatch "^3.0.0"
     source-map "^0.6.0"
 
-"@vimeo/player@^2.10.0", "@vimeo/player@^2.16.0":
+"@vimeo/player@^2.16.0":
   version "2.16.1"
   resolved "https://registry.yarnpkg.com/@vimeo/player/-/player-2.16.1.tgz#ed2237b8224dd764419b16ec4e6c3ede5bb2224e"
   integrity sha512-47pUwVFAYBKbmOpxF6CzQc0VwbVi7LCv8i1H44XgRRoMoI7jwAOSi4CDGinjEMoKOKxsn5/p8ze50XZYwgTVWA==
@@ -8372,7 +8363,7 @@ vue-template-es2015-compiler@^1.9.0:
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
   integrity sha512-4gDntzrifFnCEvyoO8PqyJDmguXgVPxKiIxrBKjIowvL9l+N66196+72XVYR8BBf1Uv1Fgt3bGevJ+sEmxfZzw==
 
-vue@^2.6.11, vue@^2.6.12:
+vue@^2.6.11:
   version "2.6.14"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.14.tgz#e51aa5250250d569a3fbad3a8a5a687d6036e235"
   integrity sha512-x2284lgYvjOMj3Za7kqzRcUSxBboHqtgRE2zlos1qWaOye5yUmHn42LB1250NJBLRwEcdrB0JRwyPTEPhfQjiQ==
